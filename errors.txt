@@ -1,0 +1,4 @@
+d:\Projects\Enhancement-of-low-exposure-images-via-recursive-histogram\src\core\enhancer.py
+  d:\Projects\Enhancement-of-low-exposure-images-via-recursive-histogram\src\core\enhancer.py:81:12 - error: Type "tuple[uint8, float]" is not assignable to return type "tuple[ndarray[Unknown, Unknown], float]"
+    "unsignedinteger[_8Bit]" is not assignable to "ndarray[Unknown, Unknown]" (reportReturnType)
+1 error, 0 warnings, 0 informations
