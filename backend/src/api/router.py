@@ -26,8 +26,9 @@ async def process_image(
     _, encoded_img = cv2.imencode(".jpg", payload.image_data)
     img_b64 = base64.b64encode(encoded_img.tobytes()).decode("utf-8")
     
+    from dataclasses import asdict
     return EnhancerResponse(
         image_base64=f"data:image/jpeg;base64,{img_b64}",
-        metrics=payload.metrics,
-        histograms=payload.histograms
+        metrics=asdict(payload.metrics),
+        histograms=asdict(payload.histograms)
     )
